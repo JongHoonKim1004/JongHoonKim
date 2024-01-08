@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARK & LONA</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+<body>
+    <div id="announcement">
+        <a href="#"><p id="announcement-text">[EVENT] 1월 기프트 안내</p></a>
+    </div>
+    <header>
+        <div id="logo"><a href="#"><img alt="logo" src="img/logo.png"></a></div>
+        <div id="login">
+            <a href="#"><img src="img/login_icon_1.png" alt="login_icon_1"></a>
+            <p>  </p>
+            <a href="#"><img src="img/login_icon_2.png" alt="login_icon_2"></a>
+            <a href="#"><img src="img/login_icon_3.png" alt="login_icon_3"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">MAN</a></li>
+                <li><a href="#">WOMAN</a></li>
+                <li><a href="#">ONLINE ECXLUSIVE</a></li>
+                <li><a href="#">ACC</a></li>
+                <li><a href="#">COLECTION</a></li>
+                <li><a href="#">STYLE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">SHOP LIST</a></li>
+                <li><a href="#">SNS</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div id=sub>
+        <div id="sub-head-hidden"></div>
+        <aside>
+            <div id="thumbnail-navigation"></div>
+            <div id="thumbnail-main-image"></div>
+        </aside>
+        <div id="content">
+            <div id="product-main-div"></div>
+            <hr>
+            <div class="product-secondary-div">
+                <div class="product-secondary-name-div"></div>
+                <div class="product-secondary-radio-div">
+                    <input type="radio" checked="checked" value="black" id="color-black">
+                    <label for="color-black" class="button-label">BLACK</label>
+                </div>
+            </div>
+            <div class="product-secondary-div"></div>
+            <div class="product-secondary-div"></div>
+            <div id="product-cart-purchase-div"></div>
+            <div id="product-block">
+                <p><br>• LOONEY TUNES(LOONEY TUNES and all related characters and elements © & ™ Warner Brros. Entertainment Inc. WB SHIELD: TM & © WBEI. (s23)에 등장하는 Coyote와 MARK&LONA 로고를 믹스시킨 콜라보레이션 맨투맨<br><br>
+                    • 정면에 브랜드 로고 자수 표현, LOONEY TUNES의 Coyote는 프린트<br><br>
+                    • 기모 소재를 사용하여 보온성이 뛰어남<br><br>
+                    • 골프연습장에는 물론 일상 생활에서도 착용 가능한 캐주얼한 느낌의 아이템<br><br></p>
+            </div>
+            
+        </div>
+        <div id="suggest-item"></div>
+    </div>
+    <footer>
+        <div id="foot">
+            <div>
+                <ul class="ul">
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">개인 정보 정책</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">배송 정책</a></li>
+                    <li><a href="#">환불 정책</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul">
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">개인 정보 정책</a></li>
+                </ul>
+            </div>
+            <div id="custom">
+                <p id="customer-senter">고 객 센 터</p>
+                <p id="tel">02-2105-6000</p>
+                <p id="open-time">MON-FRI : AM 11:00 ~ PM 5:00<br>LUNCH PM 01:00 ~ PM 02:00<br>SAT,SUN,HOLIDAY CLOSED</p>
+                <p id="fasttalk">문의하기 시 빠른 상담이 가능합니다.</p>
+            </div>
+            <div id="hide"></div>
+            <div id="coop">
+                <p>(주)제이씨패밀리</p>
+                <p>대표이사 : 김예철<br>사업자등록번호 : 211-86-58580 사업자 정보 확인 / 에스크로 확인<br>통신판매업신고 : 2017-서울성동-1359<br>상호명 : (주)제이씨패밀리<br>주소 : 서울 성동구 연무장11길 10 (성수동2가, 우리큐브)5~10층</p>
+                <p>대표전화 : 02-2015-6000</p>
+                <p>MARK & LONA</p>
+            </div>
+            <div id="coop-2024">
+                © 2024 MARK & LONA ONLINE STORE KOREA trademark, logo and other rights are solely used by JC Family under license from MARK&LONA<br>Powered by Shopify
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* announcement */
+        var announcement_text = document.getElementById('announcement-text');
+        var announcement_text_array=['[2024]회원 정책','마크앤로나 23FW OPEN','[EVENT]1월 기프트 안내']
+        var announcement_text_index= 0;
+
+        function announcement(){
+            announcement_text.innerHTML=announcement_text_array[announcement_text_index];
+            announcement_text_index++;
+            if(announcement_text_index >= announcement_text_array.length){
+                announcement_text_index=0;
+            }
+        }
+        setInterval(announcement,5000);
+
+        
+    </script>
+</body>
+</html>
